@@ -612,6 +612,160 @@
                 </div>
             </div>
         </div>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" style="padding: 64px 0 80px;">
+            <div style="text-align:center; margin-bottom: 48px;">
+                <div class="hero-badge">📚 Learn the Basics</div>
+                <h2
+                    style="font-size: 32px; font-weight: 700; background: linear-gradient(135deg, var(--text) 0%, var(--text-muted) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px;">
+                    How A/B Testing Works</h2>
+                <p style="color: var(--text-muted); font-size: 16px; max-width: 560px; margin: 0 auto;">A
+                    beginner-friendly guide to understanding the math behind your experiments.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px;">
+                <!-- What is A/B Testing -->
+                <div class="panel" style="padding: 28px;">
+                    <div class="panel-header">
+                        <div class="icon">🔬</div> What is A/B Testing?
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.7;">
+                        A/B testing is a method of comparing <strong style="color: var(--text)">two versions</strong> of
+                        something to figure out which one performs better.
+                        You split your users randomly into two groups — one sees Version A (the current design), the
+                        other sees Version B (your change) — and measure which group achieves a better outcome (like
+                        more sign-ups or clicks).
+                    </p>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.7; margin-top: 12px;">
+                        The key question this calculator answers: <strong style="color: var(--green)">How many users do
+                            you need</strong> before you can trust the results?
+                    </p>
+                </div>
+
+                <!-- Why Sample Size Matters -->
+                <div class="panel" style="padding: 28px;">
+                    <div class="panel-header">
+                        <div class="icon">📐</div> Why Sample Size Matters
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.7;">
+                        If you flip a coin 5 times and get 4 heads, you wouldn't conclude the coin is unfair. But if you
+                        flip it 1,000 times and get 800 heads — that's meaningful.
+                    </p>
+                    <p style="color: var(--text-muted); font-size: 14px; line-height: 1.7; margin-top: 12px;">
+                        A/B testing works the same way. <strong style="color: var(--text)">Too few visitors</strong> and
+                        your results could just be noise. Too many and you're wasting time.
+                        This calculator finds the <strong style="color: var(--green)">sweet spot</strong> — the minimum
+                        sample size needed to make a confident decision.
+                    </p>
+                </div>
+            </div>
+
+            <!-- The 5 Parameters -->
+            <div class="panel" style="padding: 28px; margin-bottom: 32px;">
+                <div class="panel-header">
+                    <div class="icon">⚙️</div> The 5 Key Parameters
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px 32px;">
+                    <div
+                        style="padding: 16px; background: var(--surface-2); border-radius: var(--radius-sm); border-left: 3px solid var(--accent);">
+                        <div style="font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px;">1.
+                            Baseline Conversion Rate</div>
+                        <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">How well your page
+                            converts <em>right now</em>. If 5 out of every 100 visitors sign up, your baseline is 5%.
+                            You can find this in your analytics dashboard.</p>
+                    </div>
+                    <div
+                        style="padding: 16px; background: var(--surface-2); border-radius: var(--radius-sm); border-left: 3px solid var(--accent);">
+                        <div style="font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px;">2.
+                            Minimum Detectable Effect (MDE)</div>
+                        <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">The smallest improvement
+                            you care about. A 10% MDE on a 5% baseline means you're trying to detect a lift from 5.0% to
+                            5.5%. Smaller MDE = longer test but catches subtle wins.</p>
+                    </div>
+                    <div
+                        style="padding: 16px; background: var(--surface-2); border-radius: var(--radius-sm); border-left: 3px solid var(--accent);">
+                        <div style="font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px;">3. Daily
+                            Traffic</div>
+                        <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">How many visitors each
+                            variation gets per day. This determines how long your test needs to run. More traffic =
+                            faster results.</p>
+                    </div>
+                    <div
+                        style="padding: 16px; background: var(--surface-2); border-radius: var(--radius-sm); border-left: 3px solid var(--accent);">
+                        <div style="font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px;">4.
+                            Statistical Significance (Confidence)</div>
+                        <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">How sure you want to be
+                            that the winner is actually better, not just lucky. 95% is standard — meaning only a 5%
+                            chance the result is random noise (a "false positive").</p>
+                    </div>
+                    <div
+                        style="padding: 16px; background: var(--surface-2); border-radius: var(--radius-sm); border-left: 3px solid var(--green);">
+                        <div style="font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px;">5.
+                            Statistical Power</div>
+                        <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">The probability of
+                            detecting a real improvement when one exists. 80% is standard — meaning if Version B is
+                            truly better, you'll correctly detect it 80% of the time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Mistakes & Tips -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                <div class="panel" style="padding: 28px;">
+                    <div class="panel-header">
+                        <div class="icon">⚠️</div> Common Mistakes
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <div style="display: flex; gap: 10px; align-items: flex-start;">
+                            <span style="color: var(--red); font-size: 14px; flex-shrink: 0;">✗</span>
+                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;"><strong
+                                    style="color: var(--text)">Peeking early</strong> — Checking results before reaching
+                                your sample size inflates false positives. Decide upfront and commit.</p>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: flex-start;">
+                            <span style="color: var(--red); font-size: 14px; flex-shrink: 0;">✗</span>
+                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;"><strong
+                                    style="color: var(--text)">Stopping early for a "winner"</strong> — Random
+                                fluctuations can make one variant look better temporarily. Let the test run its full
+                                duration.</p>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: flex-start;">
+                            <span style="color: var(--red); font-size: 14px; flex-shrink: 0;">✗</span>
+                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;"><strong
+                                    style="color: var(--text)">Testing too many things at once</strong> — Change one
+                                variable at a time. Otherwise you won't know what caused the difference.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel" style="padding: 28px;">
+                    <div class="panel-header">
+                        <div class="icon">💡</div> Pro Tips
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <div style="display: flex; gap: 10px; align-items: flex-start;">
+                            <span style="color: var(--green); font-size: 14px; flex-shrink: 0;">✓</span>
+                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;"><strong
+                                    style="color: var(--text)">Start with big MDE</strong> — Test for 20-30%
+                                improvements first. You'll get results in days, not weeks. Refine later.</p>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: flex-start;">
+                            <span style="color: var(--green); font-size: 14px; flex-shrink: 0;">✓</span>
+                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;"><strong
+                                    style="color: var(--text)">Run for full weeks</strong> — User behavior changes by
+                                day-of-week. Round your test duration up to the nearest full week.</p>
+                        </div>
+                        <div style="display: flex; gap: 10px; align-items: flex-start;">
+                            <span style="color: var(--green); font-size: 14px; flex-shrink: 0;">✓</span>
+                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;"><strong
+                                    style="color: var(--text)">Document everything</strong> — Record your hypothesis,
+                                metrics, start/end dates, and results. Builds team learning over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script>
