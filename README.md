@@ -2,7 +2,7 @@
 
 Calculate the exact sample size and duration for statistically significant A/B test results.
 
-**[Live Demo →](#)** *(add your GitHub Pages URL after deploying)*
+**[Live Demo →](https://prithvi-25.github.io/ab-test-calculator/)**
 
 ## Screenshot
 
@@ -35,4 +35,4 @@ As a PM, I've run dozens of A/B tests and seen teams either end tests too early 
 
 ## Author
 
-**Prithvi** — [Portfolio](#)
+**Prithvi** — [Portfolio](https://prithvi-25.github.io/)
